@@ -21,3 +21,14 @@ def vis_alle(telefonbok):
     for person in telefonbok:
         print(f"{person['navn']}: {person['nummer']}")
 
+# Oppgave 3
+def legg_til():
+    navn = input("Skriv inn navn: ")
+    nummer = int(input("Skriv inn nummer: "))
+
+    ny_person = {"navn": navn, "nummer": nummer}
+    telefonbok.append(ny_person)
+
+    print(f"{navn} ble lagt til i telefonboka.")
+
+legg_til()
