@@ -2,15 +2,22 @@
 
 telefonbok = []
 
-Persjon1 = {
+Person1 = {
     "navn": "Ola",
     "nummer": 18164173
 }
 
-Persjon2 = {
+Person2 = {
     "navn": "Kari",
     "nummer": 19045254
 }
 
-telefonbok.append(Persjon1)
-telefonbok.append(Persjon2)
+telefonbok.append(Person1)
+telefonbok.append(Person2)
+
+#oppgave 2
+
+def vis_alle(telefonbok):
+    for person in telefonbok:
+        print(f"{person['navn']}: {person['nummer']}")
+
