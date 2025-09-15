@@ -3,12 +3,12 @@
 telefonbok = []
 
 Person1 = {
-    "navn": "Ola",
+    "navn": "Audun",
     "nummer": 18164173
 }
 
 Person2 = {
-    "navn": "Kari",
+    "navn": "Nicolai",
     "nummer": 19045254
 }
 
@@ -71,4 +71,3 @@ while True:
     else:
         print(f"{valg} finnes ikke i menyen")
 
-# apaaaaaaa
