@@ -71,3 +71,4 @@ while True:
     else:
         print(f"{valg} finnes ikke i menyen")
 
+# apaaaaaaa
