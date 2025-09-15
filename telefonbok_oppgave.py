@@ -32,3 +32,15 @@ def legg_til():
     print(f"{navn} ble lagt til i telefonboka.")
 
 legg_til()
+
+#oppgave 4
+
+def søk():
+    navn = input("Hvem vil du søke ettter?: ")
+
+    for person in telefonbok:
+        if person['navn'].lower() == navn:
+            print(f"{person} finnes i listen")
+            break
+    else:
+        print(f"{person} er ikke i listen")
