@@ -17,7 +17,7 @@ telefonbok.append(Person2)
 
 #oppgave 2
 
-def vis_alle(telefonbok):
+def vis_alle():
     for person in telefonbok:
         print(f"{person['navn']}: {person['nummer']}")
 
@@ -31,8 +31,6 @@ def legg_til():
 
     print(f"{navn} ble lagt til i telefonboka.")
 
-legg_til()
-
 #oppgave 4
 
 def søk():
@@ -40,7 +38,36 @@ def søk():
 
     for person in telefonbok:
         if person['navn'].lower() == navn:
-            print(f"{person} finnes i listen")
+            print(f"{person['navn']} finnes i listen")
             break
     else:
         print(f"{person} er ikke i listen")
+
+# Oppgave 5
+
+while True:
+
+    # lager en variabel med navn meny som holder teksten til menyen
+    meny = """
+        1. vis alle 
+        2. leg til 
+        3. søk
+        4. avsultt
+    """
+
+    print(meny) # printer ut menyen
+
+    valg = input("Hva vil du gjøre: ")
+
+    if valg.lower() in ["vis alle", "1"]:
+        vis_alle()
+    elif valg.lower() in ["leg til", "2"]:
+        legg_til()
+    elif valg.lower() in ["søk", "3"]:
+        søk()
+    elif valg.lower() in ["avsull", "exit", "4"]:
+        print("avsultter programet....")
+        break
+    else:
+        print(f"{valg} finnes ikke i menyen")
+
